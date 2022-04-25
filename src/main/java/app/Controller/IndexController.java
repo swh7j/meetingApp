@@ -8,7 +8,11 @@ public class IndexController {
     // 메인페이지 매핑[연결]
     @GetMapping("/") // url 지정
     public String main(){
-        return "test";
+        return "main";
     }
+
+    @GetMapping("/error")
+    public String error(){return "error";}
+
 
 }
