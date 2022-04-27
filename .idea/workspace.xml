@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="151f2990-85da-4278-b38b-7072ff426d86" name="변경" comment="최초등록">
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/Controller/LayoutController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +97,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/meetingApp/src/main/resources/img",
+    "last_opened_file_path": "C:/meetingApp/src/main/resources/static",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -122,10 +119,17 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\meetingApp\src\main\resources\static" />
+      <recent name="C:\meetingApp\src\main\resources\img" />
+      <recent name="C:\meetingApp\src\main\resources\static\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\meetingApp\src\main\resources\static" />
+      <recent name="C:\meetingApp\src\main\resources\img" />
+      <recent name="C:\meetingApp\src\main\resources" />
       <recent name="C:\Users\504\Desktop\meetingApp\src\main\resources\templates" />
       <recent name="C:\Users\504\Desktop\meetingApp\src\main\resources" />
-      <recent name="C:\meetingApp\src\main\resources\static\js" />
     </key>
   </component>
   <component name="RunManager" selected="애플리케이션.AppStart">
@@ -268,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651040056692</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="레이아웃 진행중 2022-04-27 || 21:06">
+      <created>1651061193856</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1651061193856</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +300,9 @@
     <MESSAGE value="최초등록" />
     <MESSAGE value="리액트 + 부트스트랩 연동" />
     <MESSAGE value="레이아웃 구성 만들기 ( HTML 한개 )" />
-    <option name="LAST_COMMIT_MESSAGE" value="레이아웃 구성 만들기 ( HTML 한개 )" />
+    <MESSAGE value="레이아웃 진행중 2022-04-27 || 21:06" />
+    <MESSAGE value="레이아웃 진행중 2022-04-27 || 21:17" />
+    <option name="LAST_COMMIT_MESSAGE" value="레이아웃 진행중 2022-04-27 || 21:17" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
