@@ -10,10 +10,9 @@ import java.util.List;
 public class IndexController {
     // 메인페이지 매핑[연결]
     @GetMapping("/main") // url 지정
-    public String main(){
-        return "main";
+    public List<String> main(){
+        return Arrays.asList();
     }
-
 
 
     @GetMapping("/error")

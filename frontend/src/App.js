@@ -6,7 +6,7 @@ import { ButtonToolbar, Button } from 'react-bootstrap';
 function App() {
   const [message, setMessage] = useState("");
   useEffect(() => {
-    fetch('/')
+    fetch('/main')
         .then(response => response.text())
         .then(message => {
           setMessage(message);
