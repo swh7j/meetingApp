@@ -279,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651061193856</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="레이아웃 진행중 2022-04-27 || 21:47">
+      <created>1651063640058</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1651063640058</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,7 +309,8 @@
     <MESSAGE value="레이아웃 구성 만들기 ( HTML 한개 )" />
     <MESSAGE value="레이아웃 진행중 2022-04-27 || 21:06" />
     <MESSAGE value="레이아웃 진행중 2022-04-27 || 21:17" />
-    <option name="LAST_COMMIT_MESSAGE" value="레이아웃 진행중 2022-04-27 || 21:17" />
+    <MESSAGE value="레이아웃 진행중 2022-04-27 || 21:47" />
+    <option name="LAST_COMMIT_MESSAGE" value="레이아웃 진행중 2022-04-27 || 21:47" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
