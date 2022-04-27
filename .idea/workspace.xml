@@ -63,6 +63,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JpbToolWindowState">
@@ -220,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650848541961</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="리액트 + 부트스트랩 연동">
+      <created>1651027851306</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1651027851306</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +251,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="최초등록" />
-    <option name="LAST_COMMIT_MESSAGE" value="최초등록" />
+    <MESSAGE value="리액트 + 부트스트랩 연동" />
+    <option name="LAST_COMMIT_MESSAGE" value="리액트 + 부트스트랩 연동" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/app/AppStart.java</url>
+          <line>9</line>
+          <properties class="app.AppStart">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
