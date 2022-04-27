@@ -93,6 +93,8 @@
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "list.type.of.created.stylesheet": "CSS",
@@ -106,6 +108,13 @@
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "spring.configuration.checksum": "ce2444847a774079d50a2c1a7bbef3fc"
+  },
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -113,7 +122,7 @@
       <recent name="C:\meetingApp\src\main\resources\static\js" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="Gradle.meetingApp [build]">
     <configuration name="meetingApp [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -160,8 +169,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.AppStart" />
-        <item itemvalue="npm.start" />
         <item itemvalue="Gradle.meetingApp [build]" />
       </list>
     </recent_temporary>
