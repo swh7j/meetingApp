@@ -97,7 +97,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/meetingApp/src/main/resources/static",
+    "last_opened_file_path": "C:/Users/504/IdeaProjects/meetingApp/src/main/resources/static/img",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -120,6 +120,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\504\IdeaProjects\meetingApp\src\main\resources\static\img" />
       <recent name="C:\meetingApp\src\main\resources\static" />
       <recent name="C:\meetingApp\src\main\resources\img" />
       <recent name="C:\meetingApp\src\main\resources\static\img" />
@@ -318,7 +319,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/app/AppStart.java</url>
           <line>9</line>
-          <properties class="app.AppStart">
+          <properties class="app.AppStart" method="main">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>

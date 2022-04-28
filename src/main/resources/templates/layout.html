@@ -8,8 +8,6 @@
     <style type="text/css">
 
 		*{ margin: 0px; padding: 0px;}
-
-
 		a{ text-decoration: none; }
         a {
           text-decoration: none;
@@ -22,6 +20,14 @@
         .header_menu span{
             margin-right : 30px;
         }
+        .search_box{
+            border: solid 3px lime;
+            height : 55px;
+        }
+        .search_box input{
+            height : 50px;
+            width : 100%
+        }
 	</style>
 </head>
 <body>
@@ -31,18 +37,18 @@
         <div class="my-3 row header my-4">
             <div class="col-md-6 row">
                 <div class="col-md-4">
-                    로고
+                    <img src="/img/logo.png" alt="" style="width:50%">
                 </div>
-                <div class="col-md-8">
-                    검색창
+                <div class="col-md-8 search_box">
+                    <input type="text" placeholder="검색창" autocomplete="auto" class="form-control">
                 </div>
             </div>
             <div class="col-md-6 d-flex justify-content-end header_menu">
-                <span>1</span>
-                <span>2</span>
-                <span>3</span>
-                <span>4</span>
-                <span>5</span>
+                <span><button type="button" class="btn">학원찾기</button></span>
+                <span><button type="button" class="btn">마켓</button></span>
+                <span><button type="button" class="btn">로그인</button></span>
+                <span><button type="button" class="btn">회원가입</button></span>
+                <span> <button type="button" class="btn">학원등록</button> </span>
             </div>
         </div>
 
