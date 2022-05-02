@@ -56,6 +56,7 @@
       <list>
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -130,11 +131,11 @@
       <recent name="C:\meetingApp\src\main\resources\static\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\meetingApp\src\main\resources\templates\academy" />
+      <recent name="C:\meetingApp\src\main\resources\templates" />
       <recent name="C:\Users\504\IdeaProjects\meetingApp\src\main\resources\static\img" />
       <recent name="C:\project\src\main\resources\static\img" />
       <recent name="C:\meetingApp\src\main\resources\static" />
-      <recent name="C:\meetingApp\src\main\resources\img" />
-      <recent name="C:\meetingApp\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="애플리케이션.AppStart">
@@ -340,25 +341,5 @@
     <MESSAGE value="2022-04-28 || 09:31" />
     <MESSAGE value="2022-04-28 || 09:28" />
     <option name="LAST_COMMIT_MESSAGE" value="2022-04-28 || 09:28" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/app/AppStart.java</url>
-          <line>9</line>
-          <properties class="app.AppStart" method="main">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/app/AppStart.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+    <div th:replace="header.html::header"> </div>
+    <br>
+    <br>
+    <br>
+
+    <table>
+        <thead>
+        <tr>
+            <th class="one wide">번호</th>
+            <th class="ten wide">글제목</th>
+            <th class="two wide">작성자</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <!-- CONTENTS !-->
+        <tr th:each="academy : ${academyList}">
+            <td>
+                <span th:text="${academy.ID}"></span>
+            </td>
+            <td>
+                <span th:text="${academy.ACA_NM}"></span>
+            </td>
+            <td>
+                <span th:text="${academy.ADMST_ZONE_NM}"></span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <br>
+    <hr>
+
+    <div th:replace="footer.html::footer"> </div>
+
+</body>
+</html>
