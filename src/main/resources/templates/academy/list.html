@@ -11,13 +11,12 @@
         <thead>
         <tr>
             <th class="one wide">번호</th>
-            <th class="ten wide">글제목</th>
-            <th class="two wide">작성자</th>
+            <th class="ten wide">학원이름</th>
+            <th class="two wide">학원위치</th>
         </tr>
         </thead>
 
         <tbody>
-        <!-- CONTENTS !-->
         <tr th:each="academy : ${academyList}">
             <td>
                 <span th:text="${academy.ID}"></span>

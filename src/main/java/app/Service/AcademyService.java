@@ -4,6 +4,7 @@ import app.Entity.AcademyEntity;
 import app.Repository.AcademyRepository;
 import app.dto.AcademyDto;
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
@@ -15,27 +16,20 @@ import java.util.List;
 @Service
 public class AcademyService {
 
+    @Autowired
     private AcademyRepository academyRepository;
 
-
-    public Long savePost(AcademyDto academyDto) {
-        return academyRepository.save(academyDto.toEntity()).getID();
-    }
-
-
-    public void deletePost(Long id) {
-        academyRepository.deleteById(id);
-    }
-
-    public List<AcademyDto> get() {
+    @Transactional
+    public ArrayList<AcademyDto> get() {
+        
         System.out.println("get 메소드 실행1");
-        List<AcademyEntity> academyEntityList = academyRepository.findall2();
+        List<AcademyEntity> academyEntityList = academyRepository.findAll();
         System.out.println("get 메소드 실행2!");
-        List<AcademyDto> academylist = new ArrayList<>();
+        ArrayList<AcademyDto> list = new ArrayList<>();
         System.out.println("get 메소드 실행3!");
 
         for(AcademyEntity temp : academyEntityList){
-            System.out.println(temp.getID());
+
             AcademyDto academyDto = AcademyDto.builder()
                     .ID(temp.getID())
                     .ATPT_OFCDC_SC_CODE(temp.getATPT_OFCDC_SC_CODE())
@@ -63,9 +57,11 @@ public class AcademyService {
                     .FA_RDNDA(temp.getFA_RDNDA())
                     .LOAD_DTM(temp.getLOAD_DTM())
                     .build();
-            academylist.add(academyDto);
+            list.add(academyDto);
+            return list;
         }
-        return academylist;
+        return null;
     }
+
 }
 
