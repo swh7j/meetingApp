@@ -317,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651192131032</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="2022-05-03 || 08:01">
+      <created>1651532505946</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1651532505946</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,6 +351,7 @@
     <MESSAGE value="2022-04-28 || 09:30" />
     <MESSAGE value="2022-04-28 || 09:31" />
     <MESSAGE value="2022-04-28 || 09:28" />
-    <option name="LAST_COMMIT_MESSAGE" value="2022-04-28 || 09:28" />
+    <MESSAGE value="2022-05-03 || 08:01" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022-05-03 || 08:01" />
   </component>
 </project>
