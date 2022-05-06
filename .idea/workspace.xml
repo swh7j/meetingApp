@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="151f2990-85da-4278-b38b-7072ff426d86" name="변경" comment="최초등록">
-      <change afterPath="$PROJECT_DIR$/frontend/src/component/DashboardComponent.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/component/MainComponent.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/component/TopMenuComponent.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/Config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/2022-04-27__7_37_______.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/2022-04-27__7_37_______.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/2022-05-03__9_09_______.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/2022-05-03__9_09_______.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Controller/IndexController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -346,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651581733742</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="2022-05-04 || 17:49">
+      <created>1651654168356</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1651654168356</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,6 +371,7 @@
     <MESSAGE value="2022-04-28 || 09:28" />
     <MESSAGE value="2022-05-03 || 08:01" />
     <MESSAGE value="2022-05-03 || 21:42" />
-    <option name="LAST_COMMIT_MESSAGE" value="2022-05-03 || 21:42" />
+    <MESSAGE value="2022-05-04 || 17:49" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022-05-04 || 17:49" />
   </component>
 </project>

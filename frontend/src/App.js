@@ -1,17 +1,24 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
-
-import TopMenuComponent from "./component/TopMenuComponent";
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+import Main from './components/Main';
+import HeaderComponent from './components/Header';
+import FooterComponent from './components/Footer';
 
 function App() {
   return (
-      <div className="App">
-          <div>
-              <TopMenuComponent>
-              </TopMenuComponent>
+    <div>
+      <BrowserRouter>
+        <HeaderComponent/>
+          <div className="container">
+            <Main/>
           </div>
-      </div>
+        <FooterComponent/>
+      </BrowserRouter>
+    </div>
   );
 }
 

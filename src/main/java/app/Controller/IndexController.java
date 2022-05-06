@@ -10,10 +10,10 @@ import java.util.List;
 @Controller
 public class IndexController {
     // 메인페이지 매핑[연결]
-    @GetMapping({"/", "/error"})
-    public String index() {
-        return "layout";
-    }
+//    @GetMapping({"/", "/error"})
+//    public String index() {
+//        return "layout";
+//    }
 
 
     @GetMapping("/error")
