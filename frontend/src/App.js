@@ -9,6 +9,13 @@ import HeaderComponent from './components/Header';
 import FooterComponent from './components/Footer';
 
 function App() {
+    useEffect(() => {
+    fetch('/')
+    .then(response => response.text())
+    .then(message => {
+    setMessage(message);
+    });
+},[])
   return (
     <div>
       <BrowserRouter>

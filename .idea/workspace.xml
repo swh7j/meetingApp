@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="151f2990-85da-4278-b38b-7072ff426d86" name="변경" comment="최초등록">
-      <change afterPath="$PROJECT_DIR$/frontend/src/img/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Header.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -357,7 +355,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651795672338</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="2022-05-06 || 17:15">
+      <created>1651824937769</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1651824937769</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,6 +395,7 @@
     <MESSAGE value="2022-05-04 || 17:49" />
     <MESSAGE value="2022-05-06 || 09:07" />
     <MESSAGE value="2022-05-06 || 09:08" />
-    <option name="LAST_COMMIT_MESSAGE" value="2022-05-06 || 09:08" />
+    <MESSAGE value="2022-05-06 || 17:15" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022-05-06 || 17:15" />
   </component>
 </project>

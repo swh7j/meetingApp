@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @CrossOrigin(origins = "http://localhost:3000")
 public class LayoutController {
 
-    @GetMapping("/layout")
+    @GetMapping("/")
     public String layout() {
         return "layout";
     }

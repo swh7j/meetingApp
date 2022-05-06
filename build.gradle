@@ -29,32 +29,30 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'
     runtimeOnly 'com.h2database:h2'
 }
-def frontendDir = "$projectDir/frontend"
+def webappDir = "$projectDir/frontend"
+
 sourceSets {
     main {
         resources {
-            srcDirs = ["$projectDir/src/main/resources"]
+            srcDirs = ["$webappDir/build", "$projectDir/src/main/resources"]
         }
     }
 }
+
 processResources {
-    dependsOn "copyReactBuildFiles"
+    dependsOn "copyWebApp"
 }
-task installReact(type: Exec) {
-    workingDir "$frontendDir"
-    inputs.dir "$frontendDir"
-    group = BasePlugin.BUILD_GROUP
-    if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
-        commandLine "npm.cmd", "audit", "fix" commandLine 'npm.cmd', 'install'
-    }
-    else {
-        commandLine "npm", "audit", "fix" commandLine 'npm', 'install'
-    }
+
+task copyWebApp(type: Copy) {
+    dependsOn "buildReact"
+    from "$webappDir/build"
+    into "$projectDir/src/main/resources/static"
 }
+
 task buildReact(type: Exec) {
     dependsOn "installReact"
-    workingDir "$frontendDir"
-    inputs.dir "$frontendDir"
+    workingDir "$webappDir"
+    inputs.dir "$webappDir"
     group = BasePlugin.BUILD_GROUP
     if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
         commandLine "npm.cmd", "run-script", "build"
@@ -62,12 +60,16 @@ task buildReact(type: Exec) {
         commandLine "npm", "run-script", "build"
     }
 }
-task copyReactBuildFiles(type: Copy) {
-    dependsOn "buildReact"
-    from "$frontendDir/build"
-    into "$projectDir/src/main/resources/static"
-}
 
-tasks.named('test') {
-    useJUnitPlatform()
+task installReact(type: Exec) {
+    workingDir "$webappDir"
+    inputs.dir "$webappDir"
+    group = BasePlugin.BUILD_GROUP
+    if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
+        commandLine "npm.cmd", "audit", "fix"
+        commandLine 'npm.cmd', 'install'
+    } else {
+        commandLine "npm", "audit", "fix"
+        commandLine 'npm', 'install'
+    }
 }
