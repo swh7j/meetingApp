@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import logo from '../img/logo.png';
 class HeaderComponent extends Component {
     constructor(props) {
         super(props)
@@ -12,12 +12,12 @@ class HeaderComponent extends Component {
         return (
             <div>
                 <header>
-                    <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+                    <nav className="navbar navbar-expand-md navbar-dark">
                        <div className="container">
                                <div className="my-3 row header my-4">
                                    <div className="col-md-6 row">
                                        <div className="col-md-4">
-                                           <a href="/layout"> <img src="/img/logo.png" alt="" style={{'width':'50%', 'margin-left':'50px'}}></img></a>
+                                           <a href="/layout"> <img src={logo} alt="logo" style={{'width':'50%', 'margin-left':'50px'}}></img></a>
                                        </div>
                                        <div className="col-md-8 search_box">
                                            <input type="text" placeholder="검색창" autocomplete="auto" class="form-control search"></input>

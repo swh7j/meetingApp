@@ -16,6 +16,7 @@ function App() {
           <div className="container">
             <Main/>
           </div>
+          <br></br>
         <FooterComponent/>
       </BrowserRouter>
     </div>
