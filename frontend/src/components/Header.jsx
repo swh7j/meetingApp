@@ -28,7 +28,7 @@ class HeaderComponent extends Component {
                                        <span><button type="button" class="btn menu">마켓</button></span>
                                        <span><button type="button" class="btn menu">로그인</button></span>
                                        <span><button type="button" class="btn menu">회원가입</button></span>
-                                       <span> <button type="button" class="btn up menu" >학원등록</button> </span>
+                                       <span> <button type="button" class="btn up menu"   style={{'background-color' : '#9AF0B2'}}>학원등록</button> </span>
                                    </div>
                                </div>
                            </div>
