@@ -3,7 +3,50 @@ plugins {
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
 }
+def frontendDir = "$projectDir/frontend"
 
+sourceSets {
+    main {
+        resources {
+            srcDirs = ["$projectDir/src/main/resources"]
+        }
+    }
+}
+
+processResources {
+    dependsOn "copyReactBuildFiles"
+}
+
+task installReact(type: Exec) {
+    workingDir "$frontendDir"
+    inputs.dir "$frontendDir"
+    group = BasePlugin.BUILD_GROUP
+    if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
+        commandLine "npm.cmd", "audit", "fix"
+        commandLine 'npm.cmd', 'install'
+    } else {
+        commandLine "npm", "audit", "fix"
+        commandLine 'npm', 'install'
+    }
+}
+
+task buildReact(type: Exec) {
+    dependsOn "installReact"
+    workingDir "$frontendDir"
+    inputs.dir "$frontendDir"
+    group = BasePlugin.BUILD_GROUP
+    if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
+        commandLine "npm.cmd", "run-script", "build"
+    } else {
+        commandLine "npm", "run-script", "build"
+    }
+}
+
+task copyReactBuildFiles(type: Copy) {
+    dependsOn "buildReact"
+    from "$frontendDir/build"
+    into "$projectDir/src/main/resources/static"
+}
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
@@ -29,44 +72,6 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'
     runtimeOnly 'com.h2database:h2'
 }
-//def frontendDir = "$projectDir/frontend"
-//sourceSets {
-//    main {
-//        resources {
-//            srcDirs = ["$projectDir/src/main/resources"]
-//        }
-//    }
-//}
-//processResources {
-//    dependsOn "copyReactBuildFiles"
-//}
-//task installReact(type: Exec) {
-//    workingDir "$frontendDir"
-//    inputs.dir "$frontendDir"
-//    group = BasePlugin.BUILD_GROUP
-//    if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
-//        commandLine "npm.cmd", "audit", "fix" commandLine 'npm.cmd', 'install'
-//    }
-//    else {
-//        commandLine "npm", "audit", "fix" commandLine 'npm', 'install'
-//    }
-//}
-//task buildReact(type: Exec) {
-//    dependsOn "installReact"
-//    workingDir "$frontendDir"
-//    inputs.dir "$frontendDir"
-//    group = BasePlugin.BUILD_GROUP
-//    if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
-//        commandLine "npm.cmd", "run-script", "build"
-//    } else {
-//        commandLine "npm", "run-script", "build"
-//    }
-//}
-//task copyReactBuildFiles(type: Copy) {
-//    dependsOn "buildReact"
-//    from "$frontendDir/build"
-//    into "$projectDir/src/main/resources/static"
-//}
 
 tasks.named('test') {
     useJUnitPlatform()

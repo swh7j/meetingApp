@@ -4,19 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="151f2990-85da-4278-b38b-7072ff426d86" name="변경" comment="최초등록">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/Controller/Board/BoardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/Domain/Dto/Board/BoardDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/Domain/Entity/BaseTimeEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/Domain/Entity/Board/BoardEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/Domain/Entity/Board/BoardRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/Service/Board/BoardService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/board.html" afterDir="false" />
+    <list default="true" id="151f2990-85da-4278-b38b-7072ff426d86" name="변경" comment="2022-05-05">
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/.vs/ProjectSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/.vs/VSWorkspaceState.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/.vs/components/v17/.suo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/.vs/slnx.sqlite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Footer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Header.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/List.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Main.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/img/main_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/img/main_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/img/main_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/img/main_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/img/main_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/service/AcademyService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/Controller/Academy/AcademyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/Controller/Member/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/Domain/Dto/Member/MemberDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/Domain/Entity/Academy/AcademyEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/Domain/Entity/Academy/AcademyRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/Domain/Entity/Member/MemberEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/Domain/Entity/Member/MemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/Exception/ResourceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/Service/Academy/AcademyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/Service/Member/MemberService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Controller/Board/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Controller/Board/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Domain/Dto/Board/BoardDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Domain/Dto/Board/BoardDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Domain/Entity/BaseTimeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Domain/Entity/BaseTimeEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Domain/Entity/Board/BoardEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Domain/Entity/Board/BoardEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Domain/Entity/Board/BoardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Domain/Entity/Board/BoardRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Service/Board/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Service/Board/BoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/board.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Board/board.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,9 +91,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -103,11 +130,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\meetingApp\frontend" />
+      <recent name="C:\meetingApp\frontend\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\meetingApp\frontend\src" />
+      <recent name="C:\meetingApp\src\main\resources\templates\Board" />
       <recent name="C:\meetingApp\src\main\resources\static\static" />
       <recent name="C:\meetingApp\src\main\resources\static" />
       <recent name="C:\meetingApp\src\main\resources\static\js" />
