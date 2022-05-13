@@ -5,6 +5,8 @@ import {
   Route
 } from "react-router-dom";
 import Main from './components/Main';
+import List from './components/List';
+import Boardlist from './components/BoardList';
 import HeaderComponent from './components/Header';
 import FooterComponent from './components/Footer';
 
@@ -15,7 +17,11 @@ function App() {
       <BrowserRouter>
         <HeaderComponent/>
           <div className="container">
-            <Main/>
+             <Routes>
+                 <Route path="/" element={<Main />} />
+                 <Route path="/List" element={<List />} />//
+                 <Route path="/Boardlist" element={<Boardlist />} />
+             </Routes>
           </div>
           <br></br>
         <FooterComponent/>
