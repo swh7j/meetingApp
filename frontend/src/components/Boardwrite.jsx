@@ -59,7 +59,7 @@ class CreateBoardComponent extends Component {
                             <div className = "card-body">
                                 <form>
                                     <div className = "form-group">
-                                        <label> Type </label>
+                                        <label> 카테고리 </label>
                                         <select placeholder="type" name="type" className="form-control"
                                         value={this.state.type} onChange={this.changeTypeHandler}>
                                             <option value="1">자유게시판</option>
@@ -67,17 +67,17 @@ class CreateBoardComponent extends Component {
                                         </select>
                                     </div>
                                     <div className = "form-group">
-                                        <label> Title </label>
+                                        <label> 제목 </label>
                                         <input type="text" placeholder="title" name="title" className="form-control"
                                         value={this.state.title} onChange={this.changeTitleHandler}/>
                                     </div>
                                     <div className = "form-group">
-                                        <label> Contents  </label>
+                                        <label> 내용  </label>
                                         <textarea placeholder="contents" name="contents" className="form-control"
                                         value={this.state.contents} onChange={this.changeContentsHandler}/>
                                     </div>
                                     <div className = "form-group">
-                                        <label> MemberNo  </label>
+                                        <label> 아이디  </label>
                                         <input placeholder="memberNo" name="memberNo" className="form-control"
                                         value={this.state.memberNo} onChange={this.changeMemberNoHandler}/>
                                     </div>
