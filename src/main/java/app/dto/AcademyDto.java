@@ -1,12 +1,6 @@
 package app.dto;
 
-
-import app.Entity.AcademyEntity;
 import lombok.*;
-
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
 @Getter @Setter @ToString @NoArgsConstructor
 public class AcademyDto {
@@ -37,36 +31,6 @@ public class AcademyDto {
     private String FA_RDNDA;
     private int LOAD_DTM;
 
-    public AcademyEntity toEntity(){
-        AcademyEntity entity = AcademyEntity.builder()
-                .ID(ID)
-                .ATPT_OFCDC_SC_CODE(ATPT_OFCDC_SC_CODE)
-                .ATPT_OFCDC_SC_NM(ATPT_OFCDC_SC_NM)
-                .ADMST_ZONE_NM(ADMST_ZONE_NM)
-                .ACA_INSTI_SC_NM(ACA_INSTI_SC_NM)
-                .ACA_ASNUM(ACA_ASNUM)
-                .ACA_NM(ACA_NM)
-                .ESTBL_YMD(ESTBL_YMD)
-                .REG_YMD(REG_YMD)
-                .REG_STTUS_NM(REG_STTUS_NM)
-                .CAA_BEGIN_YMD(CAA_BEGIN_YMD)
-                .CAA_END_YMD(CAA_END_YMD)
-                .TOFOR_SMTOT(TOFOR_SMTOT)
-                .DTM_RCPTN_ABLTY_NMPR_SMTOT(DTM_RCPTN_ABLTY_NMPR_SMTOT)
-                .REALM_SC_NM(REALM_SC_NM)
-                .LE_ORD_NM(LE_ORD_NM)
-                .LE_CRSE_LIST_NM(LE_CRSE_LIST_NM)
-                .LE_CRSE_NM(LE_CRSE_NM)
-                .PSNBY_THCC_CNTNT(PSNBY_THCC_CNTNT)
-                .THCC_OTHBC_YN(THCC_OTHBC_YN)
-                .BRHS_ACA_YN(BRHS_ACA_YN)
-                .FA_RDNZC(FA_RDNZC)
-                .FA_RDNMA(FA_RDNMA)
-                .FA_RDNDA(FA_RDNDA)
-                .LOAD_DTM(LOAD_DTM)
-                .build();
-        return entity;
-    }
 
     @Builder
     public AcademyDto(Long ID, String ATPT_OFCDC_SC_CODE, String ATPT_OFCDC_SC_NM, String ADMST_ZONE_NM, String ACA_INSTI_SC_NM, Long ACA_ASNUM, String ACA_NM, int ESTBL_YMD, int REG_YMD, String REG_STTUS_NM, String CAA_BEGIN_YMD, String CAA_END_YMD, int TOFOR_SMTOT, int DTM_RCPTN_ABLTY_NMPR_SMTOT, String REALM_SC_NM, String LE_ORD_NM, String LE_CRSE_LIST_NM, String LE_CRSE_NM, String PSNBY_THCC_CNTNT, String THCC_OTHBC_YN, String BRHS_ACA_YN, int FA_RDNZC, String FA_RDNMA, String FA_RDNDA, int LOAD_DTM) {

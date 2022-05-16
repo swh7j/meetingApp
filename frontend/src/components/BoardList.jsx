@@ -7,12 +7,16 @@ class List extends Component {
     constructor(props) {
         super(props)
         this.state = { lists:[]}
+        this.createBoard = this.createBoard.bind(this);
     }
 
     componentDidMount() {
             BoardService.get_boardlist().then((res) => { this.setState({ lists: res.data }); });
     }
 
+    createBoard() {
+            this.props.history.push('/Boardwrite');
+    }
     render() {
         return (
             <div>
@@ -22,7 +26,7 @@ class List extends Component {
 
                     </div>
                     <div className = "col-md-1">
-                           <button className="btn btn-primary" onClick={this.createBoard}> 글 작성</button>
+                          <button className="btn btn-primary menu" ><a href="/Boardwrite">글 쓰기  </a></button>
                     </div>
                 </div>
                     <table className="table table-striped table-bordered">

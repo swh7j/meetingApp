@@ -1,32 +1,50 @@
 package app.Controller;
 
-
+import app.Entity.AcademyEntity;
+import app.Entity.BoardEntity;
 import app.Service.AcademyService;
-import app.dto.AcademyDto;
+import app.Service.BoardService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
-
-@Controller
-@RequestMapping("/academy")
+@RestController
+@RequestMapping("/api")
+@CrossOrigin(origins = "http://localhost:3000")
 public class AcademyController {
+
     @Autowired
     private AcademyService academyService;
 
-    @GetMapping("/list")
-    public String list(Model model) {
-        System.out.println("맵핑 실행");
-        List<AcademyDto> academy = academyService.get();
-        System.out.println("모델 불러오기");
-        model.addAttribute("academyList", academy);
+    @Autowired
+    private BoardService boardService;
 
-        return "/academy/list";
+    // get all board
+//    @GetMapping("/list")
+//    public List<AcademyEntity> academy_list() {
+//        List<AcademyEntity> list = academyService.get();
+//        return list;
+//    }
+    @GetMapping("/list")
+    public ResponseEntity<Map> getAllacademy(@RequestParam(value = "p_num", required=false) Integer p_num) {
+        if (p_num == null || p_num <= 0) {
+            p_num = 1;
+        }
+        System.out.println(academyService.getac(p_num));
+        return  academyService.getac(p_num);
+    }
+    @GetMapping("/boardList")
+    public List<BoardEntity> board_list() {
+        List<BoardEntity> b_list = boardService.get();
+        return b_list;
     }
 
+    @PostMapping("/boardList")
+    public BoardEntity createBoard(@RequestBody BoardEntity board) {
+        return boardService.createBoard(board);
+    }
 
 }
