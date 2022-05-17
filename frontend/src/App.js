@@ -1,9 +1,5 @@
 import './App.css';
-import {
-  BrowserRouter,
-  Routes,
-  Route
-} from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Main from './components/Main';
 import List from './components/List';
 import Boardlist from './components/BoardList';
@@ -15,19 +11,21 @@ function App() {
 
   return (
     <div>
-      <BrowserRouter>
+      <Router>
         <HeaderComponent/>
           <div className="container">
-             <Routes>
-                 <Route path="/" element={<Main />} />
-                 <Route path="/List" element={<List />} />//
-                 <Route path="/Boardlist" element={<Boardlist />} />
-                 <Route path="/Boardwrite" element={<Boardwrite />} />
-             </Routes>
+             <Switch>
+                 <Route path = "/" exact component = {Main}></Route>
+
+                 <Route path = "/List"  component = {List}></Route>
+                 <Route path = "/Boardlist"  component = {Boardlist}></Route>
+                 <Route path = "/Boardwrite"  component = {Boardwrite}></Route>
+             </Switch>
+
           </div>
           <br></br>
         <FooterComponent/>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 }
