@@ -12,7 +12,7 @@ public interface AcademyRepository extends JpaRepository<AcademyEntity, Long> {
             + "SELECT "
             + "*"
             + " FROM academy WHERE 0 < id "
-            + "ORDER BY id DESC LIMIT ?1, ?2";
+            + "ORDER BY id ASC LIMIT ?1, ?2";
 
     @Query(value = SELECT_AC_LIST_PAGED, nativeQuery = true)
     List<AcademyEntity> findFromTo(

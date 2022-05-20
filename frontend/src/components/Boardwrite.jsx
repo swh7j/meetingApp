@@ -62,8 +62,10 @@ class CreateBoardComponent extends Component {
                                         <label> 카테고리 </label>
                                         <select placeholder="type" name="type" className="form-control"
                                         value={this.state.type} onChange={this.changeTypeHandler}>
-                                            <option value="1">자유게시판</option>
+                                            <option value="1">공지사항</option>
                                             <option value="2">질문과 답변</option>
+                                            <option value="3">일반게시판</option>
+                                            <option value="4">학원별 후기 게시판</option>
                                         </select>
                                     </div>
                                     <div className = "form-group">
@@ -77,7 +79,7 @@ class CreateBoardComponent extends Component {
                                         value={this.state.contents} onChange={this.changeContentsHandler}/>
                                     </div>
                                     <div className = "form-group">
-                                        <label> 아이디  </label>
+                                        <label> 아이디 (차후에 회원 시스템 대비) </label>
                                         <input placeholder="memberNo" name="memberNo" className="form-control"
                                         value={this.state.memberNo} onChange={this.changeMemberNoHandler}/>
                                     </div>
