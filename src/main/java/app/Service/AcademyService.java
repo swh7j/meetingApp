@@ -1,6 +1,8 @@
 package app.Service;
 
 import app.Entity.AcademyEntity;
+import app.Entity.BoardEntity;
+import app.Exception.ResourceNotFoundException;
 import app.Repository.AcademyRepository;
 import app.util.PagingUtil;
 import lombok.AllArgsConstructor;
@@ -56,4 +58,11 @@ public class AcademyService {
 
         return ResponseEntity.ok(result);
     }
+
+    public ResponseEntity<AcademyEntity> getAcademyByNo(Long no) {
+        AcademyEntity academy = AR.findById(no)
+                .orElseThrow(() -> new ResourceNotFoundException("Not exist Board Data by no : ["+no+"]"));
+        return ResponseEntity.ok(academy);
+    }
+
 }

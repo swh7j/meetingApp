@@ -8,5 +8,8 @@ class AcademyService {
     getAcademy_list(p_num) {
         return axios.get(ACADEMY_API_BASE_URL + "?p_num="+ p_num);
     }
+    getOneAcademy(no) {
+        return axios.get(ACADEMY_API_BASE_URL + "/" + no);
+    }
 }
 export default new AcademyService();

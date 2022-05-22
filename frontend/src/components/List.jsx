@@ -86,6 +86,10 @@ class List extends Component {
             );
         }
     }
+    readAC(no) {
+            this.props.history.push(`/DetailAcademy/${no}`);
+            window.location.reload();
+    }
     render() {
         return (
             <div>
@@ -104,7 +108,7 @@ class List extends Component {
                         {
                            this.state.lists.map(
                                    (list) =>
-                                   <tr key = {list.id}>
+                                    <tr key = {list} onClick = {() => this.readAC(list.id)}>
                                        <td> {list.id} </td>
                                        <td> {list.aca_NM} </td>
                                        <td> {list.atpt_OFCDC_SC_NM} </td>

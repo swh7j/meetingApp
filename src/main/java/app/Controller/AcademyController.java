@@ -36,6 +36,12 @@ public class AcademyController {
         System.out.println(academyService.getac(p_num));
         return  academyService.getac(p_num);
     }
+    @GetMapping("/list/{no}")
+    public ResponseEntity<AcademyEntity> getAcademyByNo(
+            @PathVariable Long no) {
+        return academyService.getAcademyByNo(no);
+    }
+
     @GetMapping("/boardList")
     public List<BoardEntity> board_list() {
         List<BoardEntity> b_list = boardService.get();
@@ -45,6 +51,13 @@ public class AcademyController {
     @PostMapping("/boardList")
     public BoardEntity createBoard(@RequestBody BoardEntity board) {
         return boardService.createBoard(board);
+    }
+
+    @GetMapping("/boardList/{no}")
+    public ResponseEntity<BoardEntity> getBoardByNo(
+            @PathVariable Integer no) {
+
+        return boardService.getBoard(no);
     }
 
 }

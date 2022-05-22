@@ -6,7 +6,7 @@ class CreateBoardComponent extends Component {
         super(props);
 
         this.state = {
-            type: '',
+            type: 0,
             title: '',
             contents: '',
             memberNo: ''
@@ -41,14 +41,14 @@ class CreateBoardComponent extends Component {
         };
         console.log("board => "+ JSON.stringify(board));
         BoardService.createBoard(board).then(res => {
-
+            this.props.history.push('/Boardlist');
+            window.location.reload();
         });
-        window.location.reload();
-        this.props.history.push('/list');
+
     }
 
     cancel() {
-        this.props.history.push('/list');
+        this.props.history.push('/Boardlist');
         window.location.reload();
     }
 

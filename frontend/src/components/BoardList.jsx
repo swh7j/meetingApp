@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import BoardService from '../service/BoardService';
 
-class List extends Component {
+class BoardList extends Component {
 
 
     constructor(props) {
@@ -16,6 +16,11 @@ class List extends Component {
 
     createBoard() {
             this.props.history.push('/Boardwrite');
+            window.location.reload();
+    }
+    readBoard(no) {
+            this.props.history.push(`/Readboard/${no}`);
+            window.location.reload();
     }
     render() {
         return (
@@ -26,7 +31,7 @@ class List extends Component {
 
                     </div>
                     <div className = "col-md-1">
-                          <button className="btn btn-primary menu" ><a href="/Boardwrite">글 쓰기  </a></button>
+                          <button className="btn btn-primary menu" onClick={this.createBoard}>글 쓰기</button>
                     </div>
                 </div>
                     <table className="table table-striped table-bordered">
@@ -43,7 +48,7 @@ class List extends Component {
                            {
                                this.state.lists.map(
                                    (list) =>
-                                   <tr key = {list}>
+                                   <tr key = {list} onClick = {() => this.readBoard(list.b_id)}>
                                        <td> {list.b_id} </td>
                                        <td> {list.title} </td>
                                        <td> {list.createdTime} </td>
@@ -61,4 +66,4 @@ class List extends Component {
     }
 }
 
-export default List;
+export default BoardList;
