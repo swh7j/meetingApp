@@ -33,11 +33,8 @@ class List extends Component {
                         <thead>
                              <tr>
                                 <th>글 번호</th>
-                                <th>타이틀 </th>
-                                <th>작성자 </th>
+                                <th>제목 </th>
                                 <th>작성일 </th>
-                                <th>갱신일 </th>
-                                <th>좋아요수</th>
                                 <th>조회수</th>
                             </tr>
                         </thead>
@@ -49,11 +46,11 @@ class List extends Component {
                                    <tr key = {list}>
                                        <td> {list.b_id} </td>
                                        <td> {list.title} </td>
-                                       <td> {list.m_num} </td>
                                        <td> {list.createdTime} </td>
-                                       <td> {list.updatedTime} </td>
-                                       <td> {list.b_like} </td>
                                        <td> {list.b_view} </td>
+                                        {
+
+                                        }
                                    </tr>
                                )
                            }

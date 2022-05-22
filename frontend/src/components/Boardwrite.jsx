@@ -43,10 +43,13 @@ class CreateBoardComponent extends Component {
         BoardService.createBoard(board).then(res => {
 
         });
+        window.location.reload();
+        this.props.history.push('/list');
     }
 
     cancel() {
         this.props.history.push('/list');
+        window.location.reload();
     }
 
     render() {
@@ -65,7 +68,6 @@ class CreateBoardComponent extends Component {
                                             <option value="1">공지사항</option>
                                             <option value="2">질문과 답변</option>
                                             <option value="3">일반게시판</option>
-                                            <option value="4">학원별 후기 게시판</option>
                                         </select>
                                     </div>
                                     <div className = "form-group">
@@ -84,7 +86,7 @@ class CreateBoardComponent extends Component {
                                         value={this.state.memberNo} onChange={this.changeMemberNoHandler}/>
                                     </div>
                                     <button className="btn btn-success" onClick={this.createBoard}>Save</button>
-                                    <button type="button" class="btn btn-danger menu"><a href="/Boardlist">취소 </a></button>
+                                    <button type="button" onClick={this.cancel.bind(this)} class="btn btn-danger menu">취소</button>
                                 </form>
                             </div>
                         </div>

@@ -5,24 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="151f2990-85da-4278-b38b-7072ff426d86" name="변경" comment="최초등록">
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Boardwrite.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/Entity/BoardEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/Exception/ResourceNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/Repository/BoardRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/Service/BoardService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/BoardList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/BoardList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Boardwrite.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Boardwrite.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/List.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/List.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/service/BoardService.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/service/BoardService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Config/WebConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Controller/AcademyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Controller/AcademyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Controller/IndexController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Controller/LayoutController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Entity/AcademyEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Entity/AcademyEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Repository/AcademyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Repository/AcademyRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Service/AcademyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Service/AcademyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/dto/AcademyDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/dto/AcademyDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Entity/BoardEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Entity/BoardEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/main.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +74,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">

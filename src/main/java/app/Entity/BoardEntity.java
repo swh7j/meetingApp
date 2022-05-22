@@ -21,7 +21,7 @@ public class BoardEntity {
     private Integer b_id;
 
     @Column(name = "b_type")
-    private String type;
+    private int type;
 
     @Column(name = "b_title")
     private String title;

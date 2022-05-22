@@ -76,6 +76,7 @@ class List extends Component {
         }
     }
 
+
     isMoveToLastPage() {
         if (this.state.p_num !== this.state.paging.pageNumCountTotal) {
             return (
@@ -96,6 +97,7 @@ class List extends Component {
                                 <th>학원 번호</th>
                                 <th>학원 이름 </th>
                                 <th> 담당 교육청 </th>
+
                             </tr>
                         </thead>
                        <tbody>
