@@ -5,46 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="151f2990-85da-4278-b38b-7072ff426d86" name="변경" comment="2022-05-05">
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/.vs/ProjectSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/.vs/VSWorkspaceState.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/.vs/components/v17/.suo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/.vs/slnx.sqlite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Footer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/List.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Main.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/img/main_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/img/main_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/img/main_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/img/main_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/img/main_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/service/AcademyService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/Controller/Academy/AcademyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/Controller/Member/MemberController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/Domain/Dto/Member/MemberDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/Domain/Entity/Academy/AcademyEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/Domain/Entity/Academy/AcademyRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/Domain/Entity/Member/MemberEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/Domain/Entity/Member/MemberRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/Exception/ResourceNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/Service/Academy/AcademyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/Service/Member/MemberService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Controller/Board/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Controller/Board/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Domain/Dto/Board/BoardDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Domain/Dto/Board/BoardDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Domain/Entity/BaseTimeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Domain/Entity/BaseTimeEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Domain/Entity/Board/BoardEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Domain/Entity/Board/BoardEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Domain/Entity/Board/BoardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Domain/Entity/Board/BoardRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Service/Board/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Service/Board/BoardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/board.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Board/board.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,20 +92,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "project.structure.last.edited": "모듈",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   },
-  "keyToStringList": {
-    "GitStage.ChangesTree.GroupingKeys": [
-      "directory",
-      "module",
-      "repository"
+  &quot;keyToStringList&quot;: {
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\meetingApp\frontend" />
@@ -255,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650848541961</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="2022-05-24 || 23 : 31">
+      <created>1653402695975</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1653402695975</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,6 +243,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="최초등록" />
-    <option name="LAST_COMMIT_MESSAGE" value="최초등록" />
+    <MESSAGE value="2022-05-24 || 23 : 31" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022-05-24 || 23 : 31" />
   </component>
 </project>

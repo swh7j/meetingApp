@@ -1,34 +1,26 @@
-/* global kakao */
 import React, { Component } from 'react';
 import AcademyService from '../service/AcademyService';
 import Map from '../components/Map';
 
 class DetailAcademy extends Component {
 
-
     constructor(props) {
         super(props);
-
         this.state = {
             no: this.props.match.params.no,
             list: {},
         }
-
     }
 
     componentDidMount() {
         AcademyService.getOneAcademy(this.state.no).then( res => {
             this.setState({list: res.data});
         });
-
     }
-
-
 
     goToList() {
         this.props.history.push('/list');
         window.location.reload();
-
     }
 
     render() {
@@ -47,5 +39,6 @@ class DetailAcademy extends Component {
             </div>
         );
     }
+
 }
 export default DetailAcademy;

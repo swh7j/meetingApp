@@ -10,19 +10,18 @@ import ReadBoard from './components/ReadBoard';
 import DetailAcademy from './components/DetailAcademy';
 
 function App() {
-
   return (
     <div>
       <Router>
         <HeaderComponent/>
           <div className="container">
              <Switch>
-                 <Route path = "/" exact component = {Main}></Route>
-                 <Route path = "/List"  component = {List}></Route>
-                 <Route path = "/Boardlist"  component = {Boardlist}></Route>
-                 <Route path = "/Boardwrite"  component = {Boardwrite}></Route>
-                 <Route path = "/Readboard/:no" component = {ReadBoard}></Route>
-                 <Route path = "/DetailAcademy/:no" component = {DetailAcademy}></Route>
+                <Route path = "/" exact component = {Main}></Route>
+                <Route path = "/List"  component = {List}></Route>
+                <Route path = "/Boardlist"  component = {Boardlist}></Route>
+                <Route path = "/Boardwrite"  component = {Boardwrite}></Route>
+                <Route path = "/Readboard/:no" component = {ReadBoard}></Route>
+                <Route path = "/DetailAcademy/:no" component = {DetailAcademy}></Route>
              </Switch>
           </div>
           <br></br>

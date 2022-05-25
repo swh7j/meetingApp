@@ -11,16 +11,16 @@ class BoardList extends Component {
     }
 
     componentDidMount() {
-            BoardService.get_boardlist().then((res) => { this.setState({ lists: res.data }); });
+        BoardService.get_boardlist().then((res) => { this.setState({ lists: res.data }); });
     }
 
     createBoard() {
-            this.props.history.push('/Boardwrite');
-            window.location.reload();
+        this.props.history.push('/Boardwrite');
+        window.location.reload();
     }
     readBoard(no) {
-            this.props.history.push(`/Readboard/${no}`);
-            window.location.reload();
+        this.props.history.push(`/Readboard/${no}`);
+        window.location.reload();
     }
     render() {
         return (
