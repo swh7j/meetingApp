@@ -27,7 +27,7 @@ class ReadBoard extends Component {
             type = "질문과 답변 게시판";
 
         } else {
-            type = "타입 미지정";
+            type = "카테고리 미지정";
         }
 
         return (
@@ -51,7 +51,25 @@ class ReadBoard extends Component {
         window.location.reload();
 
     }
+     goToUpdate = (event) => {
+        event.preventDefault();
+        this.props.history.push(`/Boardwrite/${this.state.no}`);
+        window.location.reload();
+    }
+    deleteView = async function () {
+        if(window.confirm("정말로 글을 삭제하시겠습니까?")) {
+            BoardService.deleteBoard(this.state.no).then( res => {
+                console.log("delete result => "+ JSON.stringify(res));
+                if (res.status == 200) {
+                    this.props.history.push('/Boardlist');
+                     window.location.reload();
+                } else {
+                    alert("글 삭제가 실패했습니다.");
+                }
+            });
 
+        }
+    }
     render() {
         return (
             <div>
@@ -74,7 +92,9 @@ class ReadBoard extends Component {
                             </div>
 
                             {this.returnDate(this.state.board.createdTime, this.state.board.updatedTime) }
-                            <button className="btn btn-primary" onClick={this.goToList.bind(this)} style={{marginLeft:"10px"}}>글 목록으로 이동</button>
+                            <button className="btn btn-danger" onClick={() => this.deleteView()} style={{marginLeft:"10px"}}>삭제</button>
+                            <button className="btn btn-info" onClick={this.goToUpdate} style={{marginLeft:"10px"}}>수정</button>
+                            <button className="btn btn-primary" onClick={this.goToList.bind(this)} style={{marginLeft:"10px"}}>목록</button>
                     </div>
                 </div>
 

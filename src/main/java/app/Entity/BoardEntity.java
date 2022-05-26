@@ -44,5 +44,4 @@ public class BoardEntity {
     @Column(name = "b_view")
     private Integer b_view;
 
-
 }

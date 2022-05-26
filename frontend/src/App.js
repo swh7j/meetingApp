@@ -19,7 +19,7 @@ function App() {
                 <Route path = "/" exact component = {Main}></Route>
                 <Route path = "/List"  component = {List}></Route>
                 <Route path = "/Boardlist"  component = {Boardlist}></Route>
-                <Route path = "/Boardwrite"  component = {Boardwrite}></Route>
+                <Route path = "/Boardwrite/:no"  component = {Boardwrite}></Route>
                 <Route path = "/Readboard/:no" component = {ReadBoard}></Route>
                 <Route path = "/DetailAcademy/:no" component = {DetailAcademy}></Route>
              </Switch>

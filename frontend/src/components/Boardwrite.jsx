@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import BoardService from '../service/BoardService';
 
-class CreateBoardComponent extends Component {
+class Boardwrite extends Component {
 
     constructor(props) {
         super(props);
 
         this.state = {
+            no: this.props.match.params.no,
             type: 0,
             title: '',
             contents: '',
@@ -40,19 +41,44 @@ class CreateBoardComponent extends Component {
             contents: this.state.contents,
             memberNo: this.state.memberNo
         };
-        console.log("board => "+ JSON.stringify(board));
-        BoardService.createBoard(board).then(res => {
-            this.props.history.push('/Boardlist');
-            window.location.reload();
-        });
 
+        console.log("게시글  => "+ JSON.stringify(board));
+
+        if (this.state.no === '_create') {
+            BoardService.createBoard(board).then(res => {
+                this.props.history.push('/Boardlist');
+                window.location.reload();
+            });
+        }
+        else {
+            BoardService.updateBoard(this.state.no, board).then(res => {
+                this.props.history.push('/Boardlist');
+                window.location.reload();
+            });
+        }
     }
 
     cancel() {
         this.props.history.push('/Boardlist');
         window.location.reload();
     }
+    componentDidMount() {
+        if (this.state.no === '_create') {
+            return
+        } else {
+            BoardService.getOneBoard(this.state.no).then( (res) => {
+                let board = res.data;
+                console.log("게시글  => "+ JSON.stringify(board));
 
+                this.setState({
+                        type: board.type,
+                        title: board.title,
+                        contents: board.contents,
+                        memberNo: board.memberNo
+                });
+            });
+        }
+    }
     render() {
         return (
             <div>
@@ -86,7 +112,7 @@ class CreateBoardComponent extends Component {
                                         <input placeholder="memberNo" name="memberNo" className="form-control"
                                         value={this.state.memberNo} onChange={this.changeMemberNoHandler}/>
                                     </div>
-                                    <button className="btn btn-success" onClick={this.createBoard}>Save</button>
+                                    <button className="btn btn-primary" onClick={this.createBoard}>완료</button>
                                     <button type="button" onClick={this.cancel.bind(this)} class="btn btn-danger menu">취소</button>
                                 </form>
                             </div>
@@ -98,4 +124,4 @@ class CreateBoardComponent extends Component {
     }
 }
 
-export default CreateBoardComponent;
+export default Boardwrite;

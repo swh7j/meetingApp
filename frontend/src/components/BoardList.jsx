@@ -13,9 +13,8 @@ class BoardList extends Component {
     componentDidMount() {
         BoardService.get_boardlist().then((res) => { this.setState({ lists: res.data }); });
     }
-
     createBoard() {
-        this.props.history.push('/Boardwrite');
+        this.props.history.push('/Boardwrite/_create');
         window.location.reload();
     }
     readBoard(no) {

@@ -20,4 +20,7 @@ public interface AcademyRepository extends JpaRepository<AcademyEntity, Long> {
             final Integer objectEndNum
     );
 
+
+
+
 }

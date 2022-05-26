@@ -60,4 +60,18 @@ public class AcademyController {
         return boardService.getBoard(no);
     }
 
+    @PutMapping("/boardList/{no}")
+    public ResponseEntity<BoardEntity> updateBoardByNo(
+            @PathVariable Integer no, @RequestBody BoardEntity board){
+
+        return boardService.updateBoard(no, board);
+    }
+
+    @DeleteMapping("/boardList/{no}")
+    public ResponseEntity<Map<String, Boolean>> deleteBoardByNo(
+            @PathVariable Integer no) {
+
+        return boardService.deleteBoard(no);
+    }
+
 }

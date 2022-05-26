@@ -1,7 +1,7 @@
 package app.Service;
 
+
 import app.Entity.AcademyEntity;
-import app.Entity.BoardEntity;
 import app.Exception.ResourceNotFoundException;
 import app.Repository.AcademyRepository;
 import app.util.PagingUtil;
@@ -9,7 +9,6 @@ import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-
 import javax.transaction.Transactional;
 import java.util.HashMap;
 import java.util.List;
